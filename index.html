@@ -8,32 +8,53 @@
   </head>
   <body>
     <!-- header start -->
-    <header>
-      <div class="top-bar">
-        <div class="logo"><img src="/public/image/logo.png" alt="logo" /></div>
-        <div class="search-bar">
-          <select>
-            <option>All Categories</option>
-          </select>
-          <input type="text" placeholder="Search for items..." />
-          <button>
-            <img src="/public/image/Search.png" alt="search bar" />
-          </button>
-        </div>
-        <div class="icons">
-          <div>
-            <img src="/public/image/Circle Around.png" alt="circle around" />
-            <a href="#">Compare</a>
-            <img src="/public/image/Love.png" alt="love" />
-            <a href="#">Wishlist</a>
-            <img src="/public/image/Shopping Cart.png" alt="shopping cart" />
-            <a href="#">Cart</a>
-            <img src="/public/image/Profile.png" alt="profile" />
-            <a href="#">Account</a>
-          </div>
-        </div>
+    <header class="header">
+  <div class="top-bar">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="/public/image/logo.png" alt="Nest" />
+    </div>
+
+    <!-- Search -->
+    <div class="search-bar">
+      <select>
+        <option>All Categories</option>
+      </select>
+      <span class="divider"></span>
+      <input type="text" placeholder="Search for items..." />
+      <button>
+        <img src="/public/image/Search.png" alt="search" />
+      </button>
+    </div>
+
+    <!-- Icons -->
+    <div class="icons">
+      <div class="icon-item">
+        <span class="badge-header">3</span>
+        <img src="/public/image/Circle Around.png" />
+        <span>Compare</span>
       </div>
-    </header>
+
+      <div class="icon-item">
+        <span class="badge-header">6</span>
+        <img src="/public/image/Love.png" />
+        <span>Wishlist</span>
+      </div>
+
+      <div class="icon-item">
+        <span class="badge-header">2</span>
+        <img src="/public/image/Shopping Cart.png" />
+        <span>Cart</span>
+      </div>
+
+      <div class="icon-item">
+        <img src="/public/image/Profile.png" />
+        <span>Account</span>
+      </div>
+    </div>
+  </div>
+</header>
+
     <!-- Navbar -->
     <nav class="navbar">
       <button class="browse-categories">
