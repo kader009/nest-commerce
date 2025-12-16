@@ -83,7 +83,7 @@ body {
   position: absolute;
   top: -10px;
   left: 12px;
-  background: #3BB77E;
+  background: #3bb77e;
   color: #fff;
   font-size: 11px;
   width: 18px;
@@ -93,7 +93,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 
 /* Navbar styles */
 .navbar {
@@ -210,6 +209,67 @@ body {
   height: 100%;
   padding: 0 60px;
   gap: 40px;
+}
+
+.banner-section .banner-content .banner-text h1 {
+  width: 411px;
+  height: 120px;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.banner-section .banner-content .banner-text p {
+  color: #b0a9a9;
+  font-weight: 500;
+  font-size: 20px;
+  font-style: medium;
+  letter-spacing: 0.05em;
+  margin-bottom: 25px;
+}
+.subscribe-form {
+  width: 414px;
+  height: 67px;
+  background: #ffffff;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  padding: 6px 6px 6px 6px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe-form input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0 30px;
+  font-size: 18px;
+  color: #333;
+  background: transparent;
+}
+
+.subscribe-form input::placeholder {
+  color: #B0A9A9;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.subscribe-form button {
+  height: 67px;
+  min-width: 155px;
+  padding: 0 40px;
+  border: none;
+  border-radius: 100px;
+  background: #3bb77e;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover {
+  background: #32a56f;
 }
 
 /* banner end */
@@ -962,7 +1022,7 @@ body {
 
 /* BOTTOM */
 .footer-bottom {
-  border-top: 1px solid #eee;
+  border-top: 1px solid #3bb77e;
   margin-top: 40px;
   padding: 20px 0;
   display: flex;
