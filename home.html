@@ -1,14 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/home.style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <title>Nest Mart</title>
   </head>
-<body>
-  
+  <body>
+    <!-- header start -->
+    <header class="header">
+      <div class="top-bar">
+        <!-- Logo -->
+        <div class="logo">
+          <img src="/public/image/logo.png" alt="Nest" />
+        </div>
 
-  <script src="/src/main.js"></script>
-</body>
+        <!-- Search -->
+        <div class="search-bar">
+          <select>
+            <option>All Categories</option>
+          </select>
+          <span class="divider"></span>
+          <input type="text" placeholder="Search for items..." />
+          <button>
+            <img src="/public/image/Search.png" alt="search" />
+          </button>
+        </div>
+
+        <!-- Icons -->
+        <div class="icons">
+          <div class="icon-item">
+            <span class="badge-header">3</span>
+            <img src="/public/image/Circle Around.png" />
+            <span>Compare</span>
+          </div>
+
+          <div class="icon-item">
+            <span class="badge-header">6</span>
+            <img src="/public/image/Love.png" />
+            <span>Wishlist</span>
+          </div>
+
+          <div class="icon-item">
+            <span class="badge-header">2</span>
+            <img src="/public/image/Shopping Cart.png" />
+            <span>Cart</span>
+          </div>
+
+          <div class="icon-item">
+            <img src="/public/image/Profile.png" />
+            <span>Account</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navbar -->
+    <hr />
+    <nav class="navbar">
+      <button class="browse-categories">
+        <img src="/public/image/Group.png" alt="categories icon" />Browse All
+        Categories
+        <span class="down-arrow"><i class="fa-solid fa-angle-down"></i></span>
+      </button>
+      <ul class="nav-menu">
+        <li>
+          <a href="#"
+            ><img src="/public/image/Fire.png" alt="deals icon" />Deals</a
+          >
+        </li>
+        <li>
+          <a href="/home.html" class="active"
+            >Home
+            <span class="down-arrow"
+              ><i class="fa-solid fa-angle-down"></i></span
+          ></a>
+        </li>
+        <li><a href="#">About</a></li>
+        <li>
+          <a href="#"
+            >Shop
+            <span class="down-arrow"
+              ><i class="fa-solid fa-angle-down"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="#"
+            >Vendors
+            <span class="down-arrow"
+              ><i class="fa-solid fa-angle-down"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="#"
+            >Mega menu
+            <span class="down-arrow"
+              ><i class="fa-solid fa-angle-down"></i></span
+          ></a>
+        </li>
+        <li><a href="#">Compare</a></li>
+        <li>
+          <a href="#"
+            >Pages
+            <span class="down-arrow"
+              ><i class="fa-solid fa-angle-down"></i></span
+          ></a>
+        </li>
+        <li><a href="#">Contact</a></li>
+        <li>
+          <a href="#"
+            ><img
+              class="navimg"
+              src="/public/image/Headphones.png"
+              alt="support icon"
+          /></a>
+        </li>
+      </ul>
+      <div class="support">
+        <span class="support-phone-text">
+          <p class="support-phone-nav">1900-888</p>
+          <span class="support-text">24/7 Support Center</span>
+        </span>
+      </div>
+    </nav>
+    <hr />
+    <!-- header end -->
+
+    <!-- product detail start -->
+
+    <section class="product-details">
+      <div class="container">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+          <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+          <span>›</span>
+          <a href="#">Vegetables & Tubers</a>
+          <span>›</span>
+          <span class="current">Seeds Of Change Organic</span>
+        </div>
+
+        <div class="details-grid">
+          <!-- LEFT: PRODUCT IMAGE -->
+          <div class="product-image-box">
+            <img src="/public/image/detailproduct.png" alt="Product" />
+            <span class="zoom-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+          </div>
+
+          <!-- MIDDLE: PRODUCT INFO -->
+          <div class="product-info">
+            <span class="sale-badge">Sale Off</span>
+
+            <h1>
+              Seeds of Change<br />
+              Organic Quinoa,<br />
+              Brown
+            </h1>
+
+            <div class="rating">★★★★★ <span>(32 reviews)</span></div>
+
+            <div class="price-row">
+              <span class="price">$38</span>
+              <span class="old-price">$52</span>
+              <span class="discount">26% Off</span>
+            </div>
+
+            <p class="desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
+              rem officia, corrupti reiciendis minima nisi modi, quasi, odio
+              minus dolore impedit fuga eum eligendi.
+            </p>
+
+            <div class="sizes">
+              <span>Size / Weight:</span>
+              <button>50g</button>
+              <button class="active">60g</button>
+              <button>80g</button>
+              <button>100g</button>
+              <button>150g</button>
+            </div>
+
+            <div class="cart-row">
+              <input type="number" value="1" />
+              <button class="add-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Add to cart
+              </button>
+              <button class="wishlist">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- RIGHT: CATEGORIES -->
+          <aside class="category-box">
+            <h3>Categories</h3>
+
+            <ul>
+              <li>
+                <span class="cat">
+                  <i class="fa-solid fa-mug-hot"></i> Miks & Dairies
+                </span>
+                <span class="count">30</span>
+              </li>
+              <li>
+                <span class="cat">
+                  <i class="fa-solid fa-shirt"></i> Clothing
+                </span>
+                <span class="count">35</span>
+              </li>
+              <li>
+                <span class="cat">
+                  <i class="fa-solid fa-dog"></i> Pet Foods
+                </span>
+                <span class="count">42</span>
+              </li>
+              <li>
+                <span class="cat">
+                  <i class="fa-solid fa-bread-slice"></i> Baking material
+                </span>
+                <span class="count">68</span>
+              </li>
+              <li>
+                <span class="cat">
+                  <i class="fa-solid fa-apple-whole"></i> Frosh Fruit
+                </span>
+                <span class="count">87</span>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- product detail end -->
+
+    <script src="/src/main.js"></script>
+  </body>
 </html>
