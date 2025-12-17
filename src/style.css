@@ -293,7 +293,7 @@ body {
   justify-content: space-around;
   height: 100%;
   padding: 0 60px;
-  gap: 40px;
+  gap: 30px;
 }
 
 .banner-section2 .banner-content2 .banner-text2 h1 {
@@ -358,6 +358,12 @@ body {
 
 .subscribe-form button:hover {
   background: #32a56f;
+}
+
+.banner-section2 .banner-content2 .banner-img2 img {
+  width: 523px;
+  height: 66vh;
+  object-fit: cover;
 }
 
 /* banner2 end */
@@ -634,21 +640,27 @@ body {
 }
 
 /* Badges */
-.badge {
+.popular-badge {
   position: absolute;
-  top: 14px;
-  left: 14px;
+  top: 0px;
+  left: 0px;
   font-size: 12px;
-  padding: 4px 10px;
-  border-radius: 12px;
+  padding: 4px 15px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 30px;
   color: #fff;
+  width: 70px;
+  height: 31px;
 }
 
-.badge.hot {
-  background: #f74b81;
+.popular-badge.hot {
+  background: #F74B81;
 }
-.badge.sale {
+.popular-badge.sale {
   background: #67bcee;
+}
+.popular-badge.green {
+  background: #3BB77E;
 }
 
 /* popular products end */
